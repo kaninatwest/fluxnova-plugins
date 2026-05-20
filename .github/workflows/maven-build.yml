@@ -2,14 +2,13 @@ name: Build and Publish
 
 on:
   push:
-    branches: [ "main" ]
-  release:
-    types: [created]
+    branches: [ "test-pipeline" ]
+  # release:
+  #   types: [created]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
